@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spotify_clone</title>
+    <link rel="stylesheet" href="spotify.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+
+    <div class="flex">
+        <div class="left">
+            <div class="logo_container">
+            <img src="image/logo.svg" alt="logo" class="invert logo">
+            <img src="image/cross-svgrepo-com.svg" alt="" class="invert cross" style="width: 34px;">
+        </div>
+            <div class="lib bg-color">
+                <ul>
+                    <li><img src="image/home.svg" alt="home" class="invert home">Home</li>
+                    <li><img src="image/search.svg" alt="search" class="invert home">Serach</li>
+                </ul>
+            </div>
+            <div class="library bg-color">
+                <img src="image/libr.svg" alt="library" class="invert" class="libimg"><span>Your Library</span>
+                <div class="mainsong">
+                    <!-- <div class="songlist">
+                        <img src="music-svgrepo-com (1).svg" class="invert">
+                        <div class="pimg">
+                            <div class="musicname">music name </div>
+                            <div class="musicname singername">singer name</div>
+                        </div>
+                        <img src="play-circle-svgrepo-com.svg" alt="pIcon" class="invert">
+                    </div> -->
+                </div>
+                <div class="element">
+                    <div><a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/in-en/privacy/"><span>PrivacyCenter</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>PrivacyPolicy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>AboutAds</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="right">
+            <nav class="navbar">
+                <div>
+                    <img src="image/burger-menu-svgrepo-com.svg" alt="hambuger" class="hamberger invert">
+                    <img src="image/left.svg" class="invert dsize">
+                    <img src="image/right.svg" class="invert dsize">
+                </div>
+                <div>
+                    <button class="btn"><a href="#">sign up</button></a>
+                    <button class="btn" id="btn"><a href="#">log in</button></a>
+                </div>
+            </nav>
+            <div class="box_container">
+         <!--             <div data-folder="first" class="box">
+                    <div class="box_image"> <img
+                            src="songs1/first/cover.jpg"
+                            alt="img1">
+                        <div><span>let me love You</span></div>
+                    </div>
+                    <div class="mainn">
+                        <div class="pBox"><img src="play-1001-svgrepo-com.svg" alt="pIcon" class="PIcon"></div>
+                    </div>
+                    <div class="footer">hey there</div>
+                </div> -->
+
+            </div>
+            <div class="pgmain">
+                <!-- <div class="seekbarcontainer"> -->
+                <div class="progress">
+                    <div class="songsrc"></div>
+                    <div pcont>
+                        <img src="image/previous-svgrepo-com.svg" alt="previous" class="invert size previous common">
+                        <img src="play-1000-svgrepo-com.svg" alt="paly" class="invert playbar common">
+                        <!-- <img src="image/play-1000-svgrepo-com.svg" alt="play" class="invert playbar common"> -->
+                        <img src="image/next-svgrepo-com.svg" alt="next" class="invert size next common">
+                    </div>
+                    <div class="songduration">00:00/00:00</div>
+                </div>
+                <div class="playback">
+                    <input type="range" id="seekbar" name="seekbar" min="0" max="100" value="0">
+                    <!-- <input type="range" name="range" id="progress" min="0" max="100"> -->
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+
+    </div>
+    <!-- <div class="progress">
+        <input type="range" name="range" id="progress" min="0" max="100">
+    </div> -->
+    <script src="spotify.js"></script>
+</body>
+
+</html>
